@@ -1,2 +1,10 @@
 [tool.pyright]
-typeCheckingMode="off"
+typeCheckingMode = "off"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "superlists.settings"
+python_files = [
+  "tests.py",
+  "test_*.py",
+  "*_tests.py",
+]
